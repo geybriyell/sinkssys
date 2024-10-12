@@ -20,17 +20,16 @@ const employees = {
   },
 };
 
-// Handle login form submission
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
+  event.preventDefault(); 
 
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  // Example validation (replace with your actual validation logic)
   if (username === 'admin' && password === 'password') {
-      // Redirect to the employee page if login is successful
-      window.location.href = 'employee_index.html'; // Path to employee page
+      
+      window.location.href = 'employee_index.html';
   } else {
       const errorMessage = document.getElementById('error-message');
       errorMessage.classList.remove('hidden');
