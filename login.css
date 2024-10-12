@@ -1,45 +1,44 @@
 .input-field {
-    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline;
-  }
-  
-  .btn-primary {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline;
-  }
-  
-  body {
-    @apply bg-gray-100 flex items-center justify-center h-screen;
-  }
-  
-  form {
-    @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4;
-  }
-  
-  .form-background {
-      background-image: url('sink1.jpg');
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      filter: grayscale(40%); /* Reduced grayscale for better visibility */
-      transition: filter 0.3s ease;
-    }
-    
-    .form-background:hover {
-      filter: grayscale(0%);
-    }
-    
-    .form-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.2); /* Reduced overlay opacity */
-      z-index: 1;
-    }
-    
-    .form-content {
-      position: relative;
-      z-index: 2;
-    }
-    
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline;
+}
 
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline;
+}
+
+body {
+  @apply bg-gray-100 flex items-center justify-center h-screen;
+}
+
+form {
+  @apply bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4;
+}
+
+.form-background {
+    background-image: url('sink1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: grayscale(40%); /* Reduced grayscale for better visibility */
+    transition: filter 0.3s ease;
+  }
+  
+  .form-background:hover {
+    filter: grayscale(0%);
+  }
+  
+  .form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Reduced overlay opacity */
+    z-index: 1;
+  }
+  
+  .form-content {
+    position: relative;
+    z-index: 2;
+  }
+  

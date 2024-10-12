@@ -39,6 +39,21 @@
     <p id="error-message" class="text-red-500 text-xs italic hidden">Please fill out both fields.</p>
   </div>
 
-  <script src="login.js"></script>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+   
+      if (username && password) {
+    
+        window.location.href = 'employee_index.html';
+      } else {
+       
+        document.getElementById('error-message').classList.remove('hidden');
+      }
+    });
+  </script>
 </body>
 </html>
