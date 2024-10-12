@@ -4,70 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="employee_index.css">
     <title>Employee List</title>
 </head>
-<body class="bg-gray-100 p-6">
+<body class="p-6">
     <h1 class="text-3xl font-semibold mb-4">Employee List</h1>
-    <table class="min-w-full bg-white border border-gray-300">
+    <table class="min-w-full bg-white">
         <thead>
             <tr class="bg-gray-200">
-                <th class="py-2 border">Name</th>
-                <th class="py-2 border">Job Title</th>
-                <th class="py-2 border">Department</th>
-                <th class="py-2 border">Email</th>
-                <th class="py-2 border">Action</th>
+                <th class="py-2">Name</th>
+                <th class="py-2">Job Title</th>
+                <th class="py-2">Department</th>
+                <th class="py-2">Email</th>
+                <th class="py-2">Action</th>
             </tr>
         </thead>
         <tbody>
             <tr class="hover:bg-gray-100">
-                <td class="py-2 border">Ivan Petrov</td>
-                <td class="py-2 border">Software Engineer</td>
-                <td class="py-2 border">IT</td>
-                <td class="py-2 border">ivan.petrov@sinksrus.com</td>
-                <td class="py-2 border">
+                <td class="py-2">Ivan Petrov</td>
+                <td class="py-2">Software Engineer</td>
+                <td class="py-2">IT</td>
+                <td class="py-2">ivan.petrov@sinksrus.com</td>
+                <td class="py-2 text-center">
                     <button class="bg-blue-500 text-white px-4 py-1 rounded" onclick="openModal('Ivan Petrov', 'Software Engineer', 'IT', 'ivan.petrov@sinksrus.com', 'Ivan has over 5 years of experience in software development.')">Info</button>
                 </td>
             </tr>
             <tr class="hover:bg-gray-100">
-                <td class="py-2 border">Pedro Los Baños</td>
-                <td class="py-2 border">Marketing Manager</td>
-                <td class="py-2 border">Marketing</td>
-                <td class="py-2 border">pedro_los_banos@sinksrus.com</td>
-                <td class="py-2 border">
+                <td class="py-2">Pedro Los Baños</td>
+                <td class="py-2">Marketing Manager</td>
+                <td class="py-2">Marketing</td>
+                <td class="py-2">pedro_los_banos@sinksrus.com</td>
+                <td class="py-2 text-center">
                     <button class="bg-blue-500 text-white px-4 py-1 rounded" onclick="openModal('Pedro Los Baños', 'Marketing Manager', 'Marketing', 'pedro_los_banos@sinksrus.com', 'Pedro is an expert in managing product lifecycles.')">Info</button>
                 </td>
             </tr>
             <tr class="hover:bg-gray-100">
-                <td class="py-2 border">Ana Gómez</td>
-                <td class="py-2 border">HR Specialist</td>
-                <td class="py-2 border">HR</td>
-                <td class="py-2 border">ana.gomez@sinksrus.com</td>
-                <td class="py-2 border">
+                <td class="py-2">Ana Gómez</td>
+                <td class="py-2">HR Specialist</td>
+                <td class="py-2">HR</td>
+                <td class="py-2">ana.gomez@sinksrus.com</td>
+                <td class="py-2 text-center">
                     <button class="bg-blue-500 text-white px-4 py-1 rounded" onclick="openModal('Ana Gómez', 'HR Specialist', 'HR', 'ana.gomez@sinksrus.com', 'Ana specializes in user-centered design principles.')">Info</button>
                 </td>
             </tr>
             <tr class="hover:bg-gray-100">
-                <td class="py-2 border">John Wu</td>
-                <td class="py-2 border">Sales Associate</td>
-                <td class="py-2 border">Sales</td>
-                <td class="py-2 border">john.wu@sinksrus.com</td>
-                <td class="py-2 border">
+                <td class="py-2">John Wu</td>
+                <td class="py-2">Sales Associate</td>
+                <td class="py-2">Sales</td>
+                <td class="py-2">john.wu@sinksrus.com</td>
+                <td class="py-2 text-center">
                     <button class="bg-blue-500 text-white px-4 py-1 rounded" onclick="openModal('John Wu', 'Sales Associate', 'Sales', 'john.wu@sinksrus.com', 'John excels in sales.')">Info</button>
                 </td>
             </tr>
             <tr class="hover:bg-gray-100">
-                <td class="py-2 border">Emma Wilson</td>
-                <td class="py-2 border">CEO</td>
-                <td class="py-2 border">Admin</td>
-                <td class="py-2 border">emma@sinksrus.com</td>
-                <td class="py-2 border">
+                <td class="py-2">Emma Wilson</td>
+                <td class="py-2">CEO</td>
+                <td class="py-2">Admin</td>
+                <td class="py-2">emma@sinksrus.com</td>
+                <td class="py-2 text-center">
                     <button class="bg-blue-500 text-white px-4 py-1 rounded" onclick="openModal('Emma Wilson', 'CEO', 'Admin', 'emma@sinksrus.com', 'Emma has a strong background in employee relations.')">Info</button>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <!-- Modal -->
     <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden items-center justify-center">
         <div class="bg-white p-6 rounded-lg">
             <h2 id="modalTitle" class="text-xl font-semibold"></h2>
